@@ -20,17 +20,12 @@ namespace Draci_doupe
     /// </summary>
     public partial class MainPage : Page
     {
-        //public IPlayer player1;
         public MainPage()
         {
             InitializeComponent();
         }
-        //public IPlayer player1 = new Player();
-        //public static Player player2 = new Player("");
-
         public void button_Click(object sender, RoutedEventArgs e)
         {
-            //(textBox.Text);
             Player.player1 = new Player(textBox.Text);
             IPlayer player1 = Player.player1;
             player1.HP = 100;
@@ -39,14 +34,14 @@ namespace Draci_doupe
             player1.Defense = 1;
             player1.Strenght = 1;
             player1.Vitality = 1;
-            //player2.Name = textBox.Text;
-            //label3.Content = player1.Name;
             FightPage FightPage = new FightPage();
             if (textBox.Text != "" && textBox.Text != null)
             {
                 this.NavigationService.Navigate(FightPage);
             }
-            
+            //https://developer.xamarin.com/guides/android/application_fundamentals/notifications/local_notifications_in_android/
+            //https://forums.xamarin.com/discussion/62135/background-task-running-with-async-await-suggested-approach
+
         }
     }
 }

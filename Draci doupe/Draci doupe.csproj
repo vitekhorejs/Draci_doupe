@@ -59,6 +59,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Enemy\BasicEnemy.cs" />
     <Compile Include="StatPage.xaml.cs">
       <DependentUpon>StatPage.xaml</DependentUpon>
     </Compile>
