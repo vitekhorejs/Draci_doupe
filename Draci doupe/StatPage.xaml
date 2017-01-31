@@ -1,0 +1,25 @@
+﻿<Page x:Class="Draci_doupe.StatPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Draci_doupe"
+      mc:Ignorable="d" 
+      d:DesignHeight="369" d:DesignWidth="642"
+      Title="StatPage">
+
+    <Grid Background="#FF7FE475">
+        <Button x:Name="button" Content="-" HorizontalAlignment="Left" Margin="178,66,0,0" VerticalAlignment="Top" Width="20"/>
+        <Button x:Name="button1" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Margin="178,97,0,0" />
+        <Button x:Name="button_Copy" Content="+" HorizontalAlignment="Left" Margin="203,97,0,0" VerticalAlignment="Top" Width="20"/>
+        <Button x:Name="button_Copy1" Content="-" HorizontalAlignment="Left" Margin="178,128,0,0" VerticalAlignment="Top" Width="20"/>
+        <Button x:Name="button_Copy2" Content="+" HorizontalAlignment="Left" Margin="203,66,0,0" VerticalAlignment="Top" Width="20"/>
+        <Button x:Name="button_Copy3" Content="-" HorizontalAlignment="Left" Margin="178,159,0,0" VerticalAlignment="Top" Width="20"/>
+        <Button x:Name="button_Copy4" Content="+" HorizontalAlignment="Left" Margin="203,128,0,0" VerticalAlignment="Top" Width="20"/>
+        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="95,63,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Volné body:" HorizontalAlignment="Left" Margin="372,40,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Label" HorizontalAlignment="Left" Margin="445,40,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Label" HorizontalAlignment="Left" Margin="138,63,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
