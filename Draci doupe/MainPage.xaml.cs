@@ -41,6 +41,7 @@ namespace Draci_doupe
             }
             //https://developer.xamarin.com/guides/android/application_fundamentals/notifications/local_notifications_in_android/
             //https://forums.xamarin.com/discussion/62135/background-task-running-with-async-await-suggested-approach
+            //https://developer.xamarin.com/guides/android/application_fundamentals/services/
 
         }
     }
