@@ -21,22 +21,26 @@ namespace Draci_doupe
     /// </summary>
     public partial class FightPage : Page, INotifyPropertyChanged
     {
-        string name;
-        public new string Name
+        public IPlayer player1 { get; set; }
+        private string name;
+        public string namet
         {
             get { return name; }
             set
             {
                 name = value;
-                OnPropertyChanged("Name");
+                OnPropertyChanged("namet");
             }
         }
         public FightPage()
         {
             InitializeComponent();
-            Name = plyer2.Name;
+            //Name = player1.Name;
             
+            player1 = Player.player1;
+            namet = player1.Name;
             DataContext = this;
+            
         }
         public event PropertyChangedEventHandler PropertyChanged;
 

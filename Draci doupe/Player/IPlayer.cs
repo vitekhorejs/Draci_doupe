@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Draci_doupe
 {
-    interface IPlayer
+    public interface IPlayer
     {
         string Name { get; set; }
         int Level { get; set; }

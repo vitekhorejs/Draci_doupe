@@ -9,7 +9,7 @@
       Title="FightPage">
 
     <Grid Background="#FF59C0DE">
-        <Label x:Name="label" Content="{Binding Name}" HorizontalAlignment="Left" Margin="70,56,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="{Binding namet}" HorizontalAlignment="Left" Margin="70,56,0,0" VerticalAlignment="Top" Height="62" Width="198"/>
         <Label x:Name="label1" Content="{Binding HP}" HorizontalAlignment="Left" Margin="70,87,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label2" Content="{Binding Strenght}" HorizontalAlignment="Left" Margin="70,118,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label3" Content="Label" HorizontalAlignment="Left" Margin="70,149,0,0" VerticalAlignment="Top"/>

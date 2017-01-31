@@ -31,14 +31,15 @@ namespace Draci_doupe
         public void button_Click(object sender, RoutedEventArgs e)
         {
             //(textBox.Text);
-            IPlayer player1 = new Player(textBox.Text);
+            Player.player1 = new Player(textBox.Text);
+            IPlayer player1 = Player.player1;
             player1.HP = 100;
             player1.Level = 1;
             player1.Stamina = 1;
             player1.Defense = 1;
             player1.Strenght = 1;
             player1.Vitality = 1;
-            player2.Name = textBox.Text;
+            //player2.Name = textBox.Text;
             //label3.Content = player1.Name;
             FightPage FightPage = new FightPage();
             if (textBox.Text != "" && textBox.Text != null)

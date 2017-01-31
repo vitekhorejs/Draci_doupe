@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Draci_doupe
 {
-    class Player : IPlayer
+    public class Player : IPlayer
     {
+        public static IPlayer player1 { get; set; }
         private int hp;
         private string name;
         private int level;
