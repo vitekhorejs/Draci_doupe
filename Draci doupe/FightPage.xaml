@@ -5,17 +5,28 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Draci_doupe"
       mc:Ignorable="d" 
-      d:DesignHeight="369" d:DesignWidth="642"
+      d:DesignHeight="500" d:DesignWidth="900"
       Title="FightPage">
 
-    <Grid Background="#FF59C0DE">
-        <Label x:Name="label" Content="{Binding namet}" HorizontalAlignment="Left" Margin="70,56,0,0" VerticalAlignment="Top" Height="62" Width="198"/>
-        <Label x:Name="label1" Content="{Binding HP}" HorizontalAlignment="Left" Margin="70,87,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label2" Content="{Binding Strenght}" HorizontalAlignment="Left" Margin="70,118,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label3" Content="Label" HorizontalAlignment="Left" Margin="70,149,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label4" Content="Label" HorizontalAlignment="Left" Margin="70,180,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label5" Content="Label" HorizontalAlignment="Left" Margin="70,211,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label6" Content="Label" HorizontalAlignment="Left" Margin="70,242,0,0" VerticalAlignment="Top"/>
+    <Grid Background="#FFF3BDBD">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" ></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="Green" Grid.Column="0"/>
+        <Button x:Name="button" Content="Vytvořit postavu a začít" HorizontalAlignment="Left" Margin="240,246,0,0" VerticalAlignment="Top" Width="149" Height="26" Click="button_Click"/>
+        <Label x:Name="label" Content="Vítejte ve hře dračí doupě" Margin="193,25,0,0" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="250,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label3" Content="Vytvořte postavu zadáním jména" HorizontalAlignment="Left" Margin="222,111,0,0" VerticalAlignment="Top"/>
+
+        <Button x:Name="button1" Content="MISE" HorizontalAlignment="Center" Margin="0,20,0,0" Width="100" Height="50" VerticalAlignment="Top" Grid.Column="0"/>
+        <Button x:Name="button2" Content="POSTAVA" HorizontalAlignment="Center" Margin="0,90,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0"/>
+        <Button x:Name="button3" Content="VYBAVENÍ" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0"/>
+        <Button x:Name="button4" Content="SCHPNOSTI" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0"/>
+        <Button x:Name="button5" Content="OBCHOD" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0"/>
 
     </Grid>
 </Page>
