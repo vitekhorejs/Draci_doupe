@@ -44,5 +44,6 @@ namespace Draci_doupe
             //https://developer.xamarin.com/guides/android/application_fundamentals/services/
 
         }
+
     }
 }
