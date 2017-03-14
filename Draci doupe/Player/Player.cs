@@ -34,7 +34,7 @@ namespace Draci_doupe
         }
         public int HP
         {
-            get { return hp; }
+            get { return hp * vitality; }
             set { hp = value; }
         }
         public int Level
@@ -42,11 +42,11 @@ namespace Draci_doupe
             get { return level; }
             set { level = value; }
         }
-        public int Stamina
+        /*public int Stamina // nevyužiju
         {
             get { return stamina; }
             set { stamina = value; }
-        }
+        }*/
         public int Vitality
         {
             get { return vitality; }

@@ -8,5 +8,6 @@ namespace Draci_doupe.Cube
 {
     class Cube
     {
+        //logika pridelovani nahodnych cisel podle argumentu pro napr utok obranu pocet 
     }
 }

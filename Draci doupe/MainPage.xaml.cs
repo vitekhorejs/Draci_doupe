@@ -30,7 +30,7 @@ namespace Draci_doupe
             IPlayer player1 = Player.player1;
             player1.HP = 100;
             player1.Level = 1;
-            player1.Stamina = 1;
+            //player1.Stamina = 1;
             player1.Defense = 1;
             player1.Strenght = 1;
             player1.Vitality = 1;
@@ -39,9 +39,6 @@ namespace Draci_doupe
             {
                 this.NavigationService.Navigate(FightPage);
             }
-            //https://developer.xamarin.com/guides/android/application_fundamentals/notifications/local_notifications_in_android/
-            //https://forums.xamarin.com/discussion/62135/background-task-running-with-async-await-suggested-approach
-            //https://developer.xamarin.com/guides/android/application_fundamentals/services/
 
         }
 

@@ -8,5 +8,6 @@ namespace Draci_doupe.AttackBehavior
 {
     interface IAttackBehavior
     {
+        void Attack(Player p, int attackStrenght);
     }
 }
