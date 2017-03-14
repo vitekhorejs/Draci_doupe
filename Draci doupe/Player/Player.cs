@@ -16,6 +16,7 @@ namespace Draci_doupe
         private int vitality;
         private int defense;
         private int strenght;
+        private int attack;
 
         public Player(string name)
         {
@@ -62,6 +63,10 @@ namespace Draci_doupe
             get { return defense; }
             set { defense = value; }
         }
-
+        public int Attack
+        {
+            get { return attack; }
+            set { attack = value; }
+        }
     }
 }
