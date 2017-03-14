@@ -10,14 +10,14 @@ namespace Draci_doupe
     {
         string Name { get; set; }
         int Level { get; set; }
-        int HP { get; set; } // zavisle na Vitality_number
+        int HP { get; set; } // zavisle na Vitality
         //int Strenght { get; set; } // tady bude vysledne cislo po nasobeni
-        int Strenght_number { get; set; }
+        int Strenght { get; set; }
         //int Vitality { get; set; }
-        int Vitality_number { get; set; }
+        int Vitality { get; set; }
         //int Stamina { get; set; }
         int Defense{ get; set; }
-        int Attack { get; set; } // zavisle na Strenght_number
+        int Attack { get; set; } // zavisle na Strenght
         //void Player(string name) { }
 
         // strenght = 1 / 10  1 + 0,10
