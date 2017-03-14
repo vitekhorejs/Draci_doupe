@@ -12,7 +12,7 @@ namespace Draci_doupe
         private int hp;
         private string name;
         private int level;
-        private int stamina;
+        //private int stamina;
         private int vitality;
         private int defense;
         private int strenght;
