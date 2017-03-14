@@ -35,10 +35,10 @@ namespace Draci_doupe
             player1.Strenght = 1;
             player1.Vitality = 1;
             FightPage FightPage = new FightPage();
-            if (textBox.Text != "" && textBox.Text != null)
+            /*if (textBox.Text != "" && textBox.Text != null)
             {
                 this.NavigationService.Navigate(FightPage);
-            }
+            }*/
 
         }
 
