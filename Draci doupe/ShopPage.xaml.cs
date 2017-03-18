@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace Draci_doupe
 {
     /// <summary>
-    /// Interakční logika pro WelcomePage.xaml
+    /// Interakční logika pro ShopPage.xaml
     /// </summary>
-    public partial class WelcomePage : Page
+    public partial class ShopPage : Page
     {
-        public WelcomePage()
+        public ShopPage()
         {
             InitializeComponent();
-        }
-
-        private void start(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new MissionPage());
         }
     }
 }

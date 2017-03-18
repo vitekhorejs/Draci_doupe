@@ -35,8 +35,8 @@ namespace Draci_doupe
         public FightPage()
         {
             InitializeComponent();
-            player1 = Player.player1;
-            namet = player1.Name;
+            //player1 = Player.player1;
+            //namet = player1.Name;
             DataContext = this;
             
         }

@@ -5,10 +5,15 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Draci_doupe"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="500" d:DesignWidth="900"
       Title="WelcomePage">
 
     <Grid>
-        
+
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/main.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Label x:Name="label" Content="Vítejte ve hře Dračí doupě po vzoru Mafie 2" Margin="0,200,0,186" FontSize="36" FontWeight="Bold" Foreground="Red" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button x:Name="start_button" Content="Spustit hru" Height="54" Width="133" Margin="0,370,0,76" RenderTransformOrigin="1.142,2.27" VerticalAlignment="Center" HorizontalAlignment="Center" Click="start" Background="#FFB66E6E" FontWeight="Bold" FontSize="16" />
     </Grid>
 </Page>

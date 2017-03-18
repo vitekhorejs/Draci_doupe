@@ -23,8 +23,8 @@ namespace Draci_doupe
         public MainWindow()
         {
             InitializeComponent();
-            MainPage MainPage = new MainPage();
-            frame.NavigationService.Navigate(MainPage);
+            WelcomePage WelcomePage = new WelcomePage();
+            frame.NavigationService.Navigate(WelcomePage);
         }
     }
 }

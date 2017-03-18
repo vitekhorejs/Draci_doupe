@@ -6,24 +6,18 @@ using System.Threading.Tasks;
 
 namespace Draci_doupe
 {
-    public class Player : IPlayer
+    public class Player
     {
-        public static IPlayer player1 { get; set; }
+        //public static IPlayer player1 { get; set; }
         private int hp;
         private string name;
         private int level;
-        //private int stamina;
         private int vitality;
         private int defense;
         private int strenght;
         private int attack;
 
-        public Player(string name)
-        {
-            this.name = name;
-        }
-
-        /*void IPlayer.Player(string name)
+        /*public Player(string name)
         {
             this.name = name;
         }*/
@@ -43,11 +37,6 @@ namespace Draci_doupe
             get { return level; }
             set { level = value; }
         }
-        /*public int Stamina // nevyužiju
-        {
-            get { return stamina; }
-            set { stamina = value; }
-        }*/
         public int Vitality
         {
             get { return vitality; }

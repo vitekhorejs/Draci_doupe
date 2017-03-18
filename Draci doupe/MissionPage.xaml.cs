@@ -16,18 +16,19 @@ using System.Windows.Shapes;
 namespace Draci_doupe
 {
     /// <summary>
-    /// Interakční logika pro MainPage.xaml
+    /// Interakční logika pro Mission.xaml
     /// </summary>
-    public partial class MainPage : Page
+    public partial class MissionPage : Page
     {
-        public MainPage()
+        public MissionPage()
         {
             InitializeComponent();
         }
         public void button_Click(object sender, RoutedEventArgs e)
         {
-            Player.player1 = new Player(textBox.Text);
-            IPlayer player1 = Player.player1;
+            //Player.player1 = new Player(textBox.Text);
+            //IPlayer player1 = Player.player1;
+            Player player1 = new Player(); 
             player1.HP = 100;
             player1.Level = 1;
             //player1.Stamina = 1;

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Draci_doupe"
         mc:Ignorable="d"
-        Title="MainWindow" MaxHeight="550" MaxWidth="900" MinHeight="550" MinWidth="900" Height="550" Width="900">
+        Title="Mafia dračí doupě" MaxHeight="550" MaxWidth="900" MinHeight="550" MinWidth="900" Height="550" Width="900">
     <Grid>
         <Frame x:Name="frame" Content="" NavigationUIVisibility="Hidden"/>
     </Grid>
