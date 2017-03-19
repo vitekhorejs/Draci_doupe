@@ -39,7 +39,6 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <WrapPanel>
-                            <TextBlock Text="Name: " />
                             <TextBlock Text="{Binding Name_Mission}" FontWeight="Bold" />
                         </WrapPanel>
                     </DataTemplate>
@@ -47,7 +46,11 @@
             </ListView>
         </StackPanel>
         <StackPanel Opacity="0.6" Grid.Column="1" HorizontalAlignment="Left" Height="400" Margin="400,20,0,0" VerticalAlignment="Top" Width="320" Background="White">
-            <Label x:Name="MissionDescription" Content=""/>
+            <Label Content="Popis mise:"/>
+            <Label x:Name="MissionDescription" Content="{Binding Text_Mission}" />
+            <Line />
+            <Label Content="Výdělek mise:"/>
+            <Label x:Name="MissionEarn" FontWeight="Bold" />
         </StackPanel>
         <Button x:Name="button6" Content="Button" Height="50" Width="116" Margin="511,425,0,0" RenderTransformOrigin="1.142,2.27" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1" Click="button_Click"/>
     </Grid>

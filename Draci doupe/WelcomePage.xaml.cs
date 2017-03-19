@@ -18,15 +18,26 @@ namespace Draci_doupe
     /// <summary>
     /// Interakční logika pro WelcomePage.xaml
     /// </summary>
-    public partial class WelcomePage : Page
+    partial class WelcomePage : Page
     {
+        public static Player vito = new Player();
+        
         public WelcomePage()
         {
             InitializeComponent();
+            vito.HP = 100;
+            vito.Level = 1;
+            vito.Name = "Vito";
+            vito.Strenght = 1;
+            vito.Vitality = 1;
+            vito.Defense = 1;
+            vito.Attack = 10;
+            
         }
 
         private void start(object sender, RoutedEventArgs e)
         {
+            
             this.NavigationService.Navigate(new MissionPage());
         }
     }

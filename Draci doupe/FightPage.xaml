@@ -16,6 +16,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" ></RowDefinition>
         </Grid.RowDefinitions>
+        <Label x:Name="vito" Content="Vito" HorizontalAlignment="Left" Margin="217,90,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="nameh" Content="{Binding name_enemy}" Grid.Column="1" HorizontalAlignment="Left" Margin="210,90,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="{Binding hp_enemy}" Grid.Column="1" HorizontalAlignment="Left" Margin="199,123,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="{Binding hp_vito}" HorizontalAlignment="Left" Margin="210,131,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.177,-0.452"/>
         <!--<Button x:Name="button" Content="Vytvořit postavu a začít" HorizontalAlignment="Left" Margin="240,246,0,0" VerticalAlignment="Top" Width="149" Height="26" Click="button_Click"/>-->
 
     </Grid>

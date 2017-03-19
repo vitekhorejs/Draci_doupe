@@ -9,13 +9,15 @@ namespace Draci_doupe
     public class Mission
     {
         Mission_adding missions = new Mission_adding();
-        public Mission(int n)
+        /*public Mission(int n)
         {
             _id_mission = n;
-            _name_mission = missions.GetMissionName(n);
-            _text_mission = missions.GetMissionText(n);
-            
-        }
+            /*_name_mission = missions.GetMissionName(n);
+            _text_mission = missions.GetMissionText(n);*/
+            /*_name_mission = Name_Mission;
+            _text_mission = Text_Mission;
+
+        }*/
 
 
         private int _id_mission;

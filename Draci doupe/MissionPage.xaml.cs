@@ -20,6 +20,20 @@ namespace Draci_doupe
     /// </summary>
     public partial class MissionPage : Page
     {
+        public string enemy_name;
+        public int enemy_hp;
+        public int enemy_strenght;
+        public int enemy_defense;
+        public int enemy_attack;
+
+        private static List<Mission> Mission()
+        {
+            List<Mission> missions = new List<Mission>();
+            //ObservableCollection<Mission> dataList = new ObservableCollection<Mission>();
+            missions.Add(new Mission { Done = false, Level = 1, Text_Mission = "povídání k misi", Mission_description = "musis tohle", Enemy_HP = 50, Enemy_Attack = 50, Enemy_defense = 5, Enemy_name = "pan Chu", Enemy_Strenght = 5, Name_Mission = "zabij pana Chu", Reward = 100 });
+            missions.Add(new Mission { Done = true, Level = 2, Text_Mission = "další povídání k misi", Mission_description = "a tady musis zas tohle", Enemy_HP = 40, Enemy_Attack = 60, Enemy_defense = 4, Enemy_name = "irčan", Enemy_Strenght = 4, Name_Mission = "odstran iracana z cesty", Reward = 500 });
+            return missions;
+        }
         public MissionPage()
         {
             InitializeComponent();
@@ -31,31 +45,40 @@ namespace Draci_doupe
             /*Mission_adding mission_adding = new Mission_adding();
             object obj = mission_adding;*/
             //listView.ItemsSource = obj;
-            List<string> misse = new List<string>();
-            for (int x = 0; x < 4; x++)
-            {
-                Mission mise = new Mission(x);
-                //listView.Items.Add(mise.Name_Mission);
-                misse.Add(mise.Name_Mission);
-                
-            }
-            listView.ItemsSource = misse;
-            DataContext = this;
+            /* List<string> misse = new List<string>();
+             for (int x = 0; x < 4; x++)
+             {
+                 Mission mise = new Mission(x);
+                 //listView.Items.Add(mise.Name_Mission);
+                 misse.Add(mise.Name_Mission);
+
+             }
+             listView.ItemsSource = misse;
+             DataContext = this;*/
+            listView.ItemsSource = Mission();
 
         }
-        public Player player1 = new Player();
+        
         public void button_Click(object sender, RoutedEventArgs e)
         {
+            Player enemy = new Player();
+            enemy.HP.Equals(enemy_hp);
+            enemy.Attack = enemy_attack;
+            enemy.Defense = enemy_defense;
+            enemy.Name = enemy_name;
+            enemy.Strenght = enemy_strenght;
+
+            this.NavigationService.Navigate(new FightPage(WelcomePage.vito, enemy));
             //Player.player1 = new Player(textBox.Text);
             //IPlayer player1 = Player.player1;
-            
-           /* player1.HP = 100;
-            player1.Level = 1;
-            //player1.Stamina = 1;
-            player1.Defense = 1;
-            player1.Strenght = 1;
-            player1.Vitality = 1;
-            FightPage FightPage = new FightPage();*/
+
+            /* player1.HP = 100;
+             player1.Level = 1;
+             //player1.Stamina = 1;
+             player1.Defense = 1;
+             player1.Strenght = 1;
+             player1.Vitality = 1;
+             FightPage FightPage = new FightPage();*/
             /*if (textBox.Text != "" && textBox.Text != null)
             {
                 this.NavigationService.Navigate(FightPage);
@@ -68,24 +91,36 @@ namespace Draci_doupe
                 lvNewData.Items.Add(item.Name);
             }*/
 
-            
+
             //listView.DataBind();
         }
 
         private void listViewItem_MouseDoubleClick(object sender, RoutedEventArgs e)
         {
-           //MessageBox.Show("Neplatné rodné číslo.", "Upozornění", MessageBoxButton.OK, MessageBoxImage.Information);
             //ListViewItem item = sender as ListViewItem;
-            object obj = sender;
-            //object obj = item.Content;
+            //Mission neco = sender;
+
             
-           
-            DisplayMissionDetails(obj);
+            //object obj = sender;
+            ListViewItem neco = (ListViewItem)sender;
+            Mission poslat = (Mission)neco.Content;
+            //object obj = item.Content;
+
+
+            DisplayMissionDetails(poslat);
+            
         }
 
-        private void DisplayMissionDetails(object obj)
+        private void DisplayMissionDetails(Mission obj)
         {
-           MissionDescription.Content = obj;
+           MissionDescription.Content = obj.Mission_description;
+            MissionEarn.Content = obj.Reward;
+            //Mission mission = obj;
+            enemy_attack = obj.Enemy_Attack;
+            enemy_defense = obj.Enemy_defense;
+            enemy_hp = obj.Enemy_HP;
+            enemy_name = obj.Enemy_name;
+            enemy_strenght = obj.Enemy_Strenght;
             
         }
 

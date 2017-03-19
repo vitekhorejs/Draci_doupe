@@ -21,22 +21,46 @@ namespace Draci_doupe
     /// </summary>
     public partial class FightPage : Page, INotifyPropertyChanged
     {
-        public IPlayer player1 { get; set; }
-        private string name;
-        public string namet
+        //public IPlayer player1 { get; set; }
+        private string _enemy_name;
+        public string name_enemy
         {
-            get { return name; }
+            get { return _enemy_name; }
             set
             {
-                name = value;
-                OnPropertyChanged("namet");
+                _enemy_name = value;
+                OnPropertyChanged("name_enemy");
             }
         }
-        public FightPage()
+
+        private int _enemy_hp;
+        public int hp_enemy
+        {
+            get { return _enemy_hp; }
+            set
+            {
+                _enemy_hp = value;
+                OnPropertyChanged("hp_enemy");
+            }
+        }
+
+        private int _vito_hp;
+        public int hp_vito
+        {
+            get { return _vito_hp; }
+            set
+            {
+                _vito_hp = value;
+                OnPropertyChanged("hp_vito");
+            }
+        }
+        public FightPage(Player attacker, Player attacked)
         {
             InitializeComponent();
             //player1 = Player.player1;
-            //namet = player1.Name;
+            name_enemy = attacked.Name;
+            hp_enemy = attacked.HP;
+            hp_vito = attacker.HP;
             DataContext = this;
             
         }
