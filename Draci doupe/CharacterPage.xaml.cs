@@ -24,5 +24,25 @@ namespace Draci_doupe
         {
             InitializeComponent();
         }
+        private void mission_button_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new MissionPage());
+        }
+
+        private void equipment_button_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new EquipmentPage());
+        }
+
+        private void stat_button_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new StatPage());
+        }
+
+        private void shop_button_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new ShopPage());
+        }
+
     }
 }

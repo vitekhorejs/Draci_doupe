@@ -21,10 +21,10 @@
         </Grid.Background>
         <Rectangle Opacity="0.35" Fill="White" Grid.Column="0"/>
 
-        <Button x:Name="button1" Content="MISE" HorizontalAlignment="Center" Margin="0,20,0,0" Width="100" Height="50" VerticalAlignment="Top" Grid.Column="0"/>
-        <Button x:Name="button2" Content="POSTAVA" HorizontalAlignment="Center" Margin="0,90,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0" />
-        <Button x:Name="button3" Content="VYBAVENÍ" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0"/>
-        <Button x:Name="button4" Content="SCHPNOSTI" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0" Background="#FFE6C3C3"/>
-        <Button x:Name="button5" Content="OBCHOD" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0"/>
+        <Button x:Name="mission_button" Content="MISE" HorizontalAlignment="Center" Margin="0,20,0,0" Width="100" Height="50" VerticalAlignment="Top" Grid.Column="0" Click="mission_button_Click"/>
+        <Button x:Name="character_button" Content="POSTAVA" HorizontalAlignment="Center" Margin="0,90,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0" Click="character_button_Click" />
+        <Button x:Name="equipment_button" Content="VYBAVENÍ" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0" Click="equipment_button_Click"/>
+        <Button x:Name="stat_button" Content="SCHPNOSTI" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0" Background="#FFE6C3C3"/>
+        <Button x:Name="shop_button" Content="OBCHOD" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0" Click="shop_button_Click"/>
     </Grid>
 </Page>

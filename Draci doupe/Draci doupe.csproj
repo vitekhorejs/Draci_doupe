@@ -66,6 +66,8 @@
     <Compile Include="EquipmentPage.xaml.cs">
       <DependentUpon>EquipmentPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Mission.cs" />
+    <Compile Include="Mission_adding.cs" />
     <Compile Include="ShopPage.xaml.cs">
       <DependentUpon>ShopPage.xaml</DependentUpon>
     </Compile>
