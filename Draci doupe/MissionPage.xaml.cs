@@ -28,7 +28,10 @@ namespace Draci_doupe
             //object nneco = Mission_adding.Mission();
             //listView.ItemsSource = nneco{};
             //listView.ItemsSource = Mission_adding;
-            listView.ItemsSource = new  Mission_adding();
+            Mission_adding mission_adding = new Mission_adding();
+            object obj = mission_adding.Mission();
+            //listView.ItemsSource = obj;
+            listView.Items.Add(obj);
         }
         public Player player1 = new Player();
         public void button_Click(object sender, RoutedEventArgs e)
@@ -62,12 +65,12 @@ namespace Draci_doupe
         private void listViewItem_MouseDoubleClick(object sender, RoutedEventArgs e)
         {
            //MessageBox.Show("Neplatné rodné číslo.", "Upozornění", MessageBoxButton.OK, MessageBoxImage.Information);
-            ListViewItem item = sender as ListViewItem;
-            object obj = item.Content;
+            //ListViewItem item = sender as ListViewItem;
+            object obj = sender;
             //object obj = item.Content;
             
            
-            DisplayMissionDetails(item);
+            DisplayMissionDetails(obj);
         }
 
         private void DisplayMissionDetails(object obj)

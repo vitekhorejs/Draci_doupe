@@ -10,23 +10,13 @@
 
     <Grid Background="#FFF3BDBD">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="150" ></ColumnDefinition>
+            <ColumnDefinition Width="450" ></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" ></RowDefinition>
         </Grid.RowDefinitions>
-        <Rectangle Fill="Green" Grid.Column="0"/>
         <!--<Button x:Name="button" Content="Vytvořit postavu a začít" HorizontalAlignment="Left" Margin="240,246,0,0" VerticalAlignment="Top" Width="149" Height="26" Click="button_Click"/>-->
-        <Label x:Name="label" Content="Vítejte ve hře dračí doupě" Margin="193,25,0,0" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="250,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="label3" Content="Vytvořte postavu zadáním jména" HorizontalAlignment="Left" Margin="222,111,0,0" VerticalAlignment="Top"/>
-
-        <Button x:Name="button1" Content="MISE" HorizontalAlignment="Center" Margin="0,20,0,0" Width="100" Height="50" VerticalAlignment="Top" Grid.Column="0"/>
-        <Button x:Name="button2" Content="POSTAVA" HorizontalAlignment="Center" Margin="0,90,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0"/>
-        <Button x:Name="button3" Content="VYBAVENÍ" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0"/>
-        <Button x:Name="button4" Content="SCHPNOSTI" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0"/>
-        <Button x:Name="button5" Content="OBCHOD" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0"/>
 
     </Grid>
 </Page>
