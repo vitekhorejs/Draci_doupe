@@ -20,17 +20,6 @@ namespace Draci_doupe.AttackBehavior
 
             player_attacked.HP -= (int)Math.Round(utok_hodnota, 0);
 
-
-            // strenght = 1 / 10  1 + 0,10
-            //        x /= 10        x += 1
-
-
-            //dorseit pocitani se statama a napojeni na random od cube
-
-            //defense - násobení obrany -------
-            //vitality - pocet zivotu musi se koeficient kterym se nasoby HP napr x 1.30
-            //strenght - násobení ůtoku -------
-
         }
     }
 }

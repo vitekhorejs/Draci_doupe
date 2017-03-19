@@ -26,11 +26,15 @@
         <Button x:Name="equipment_button" Content="VYBAVENÍ" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0" Click="equipment_button_Click"/>
         <Button x:Name="stat_button" Content="SCHPNOSTI" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0" Click="stat_button_Click"/>
         <Button x:Name="shop_button" Content="OBCHOD" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="0" Background="#FFE6C3C3"/>
-        <StackPanel Opacity="0.6" Grid.Column="1" HorizontalAlignment="Left" Height="450" Margin="30,25,0,0" VerticalAlignment="Top" Width="320" Background="White">
-        </StackPanel>
-        <StackPanel Opacity="0.6" Grid.Column="1" HorizontalAlignment="Left" Height="400" Margin="400,20,0,0" VerticalAlignment="Top" Width="320" Background="White">
-        </StackPanel>
-        <Button x:Name="button6" Content="Button" Height="50" Width="116" Margin="511,425,0,0" RenderTransformOrigin="1.142,2.27" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
+        <Grid Opacity="0.6" Grid.Column="1" HorizontalAlignment="Left" Height="450" Margin="28,20,0,0" VerticalAlignment="Top" Width="692" Background="White">
+            <StackPanel HorizontalAlignment="Left" Height="100" Margin="30,32,0,0" VerticalAlignment="Top" Width="100" Background="White" Opacity="1" />
+            <StackPanel HorizontalAlignment="Left" Height="100" Margin="174,32,0,0" VerticalAlignment="Top" Width="100"/>
+            <StackPanel HorizontalAlignment="Left" Height="100" Margin="30,32,0,0" VerticalAlignment="Top" Width="100"/>
+            <Label x:Name="label" Content="Peníze:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="532,39,0,0"/>
+            <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="584,39,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Button x:Name="button6" Content="Button" Height="50" Width="116" Margin="587,408,0,0" RenderTransformOrigin="1.142,2.27" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
+
     </Grid>
 </Page>
 

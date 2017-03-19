@@ -28,10 +28,20 @@ namespace Draci_doupe
             //object nneco = Mission_adding.Mission();
             //listView.ItemsSource = nneco{};
             //listView.ItemsSource = Mission_adding;
-            Mission_adding mission_adding = new Mission_adding();
-            object obj = mission_adding.Mission();
+            /*Mission_adding mission_adding = new Mission_adding();
+            object obj = mission_adding;*/
             //listView.ItemsSource = obj;
-            listView.Items.Add(obj);
+            List<string> misse = new List<string>();
+            for (int x = 0; x < 4; x++)
+            {
+                Mission mise = new Mission(x);
+                //listView.Items.Add(mise.Name_Mission);
+                misse.Add(mise.Name_Mission);
+                
+            }
+            listView.ItemsSource = misse;
+            DataContext = this;
+
         }
         public Player player1 = new Player();
         public void button_Click(object sender, RoutedEventArgs e)

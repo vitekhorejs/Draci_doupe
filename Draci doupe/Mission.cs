@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Draci_doupe
 {
-    class Mission
+    public class Mission
     {
         Mission_adding missions = new Mission_adding();
         public Mission(int n)
@@ -14,6 +14,7 @@ namespace Draci_doupe
             _id_mission = n;
             _name_mission = missions.GetMissionName(n);
             _text_mission = missions.GetMissionText(n);
+            
         }
 
 
@@ -24,15 +25,15 @@ namespace Draci_doupe
             set { _id_mission = value; }
         }
 
-        private int _name_mission;
-        public int Name_Mission
+        private string _name_mission;
+        public string Name_Mission
         {
             get { return _name_mission; }
             set { _name_mission = value; }
         }
 
-        private int _text_mission;
-        public int Text_Mission
+        private string _text_mission;
+        public string Text_Mission
         {
             get { return _text_mission; }
             set { _text_mission = value; }

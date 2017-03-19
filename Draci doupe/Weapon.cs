@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Draci_doupe.AttackBehavior
+namespace Draci_doupe
 {
-    class PlayerAttackBehavior
+    class Weapon
     {
     }
 }

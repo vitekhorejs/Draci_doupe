@@ -38,15 +38,10 @@
                 </ListView.ItemContainerStyle>
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <!--<WrapPanel>
+                        <WrapPanel>
                             <TextBlock Text="Name: " />
-                            <TextBlock Text="{Binding Mission_name}" FontWeight="Bold" />
-                        </WrapPanel>-->
-                        <Grid>
-
-                            <TextBlock Text="{Binding Mission_name}"></TextBlock>
-
-                        </Grid>
+                            <TextBlock Text="{Binding Name_Mission}" FontWeight="Bold" />
+                        </WrapPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

@@ -77,6 +77,7 @@
     <Compile Include="StoryPage.xaml.cs">
       <DependentUpon>StoryPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Weapon.cs" />
     <Compile Include="WelcomePage.xaml.cs">
       <DependentUpon>WelcomePage.xaml</DependentUpon>
     </Compile>
@@ -104,13 +105,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AttackBehavior\BossAttackBehavior.cs" />
     <Compile Include="AttackBehavior\EnemyAttackBehavior.cs" />
     <Compile Include="AttackBehavior\IAttackBehavior.cs" />
-    <Compile Include="AttackBehavior\PlayerAttackBehavior.cs" />
     <Compile Include="Cube\Cube.cs" />
     <Compile Include="Cube\ICube.cs" />
-    <Compile Include="Enemy\Boss.cs" />
     <Compile Include="Enemy\IEnemy.cs" />
     <Compile Include="FightPage.xaml.cs">
       <DependentUpon>FightPage.xaml</DependentUpon>
@@ -173,6 +171,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Vito_Scaletta.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
